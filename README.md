@@ -27,24 +27,34 @@ This repository contains a collection of MATLAB projects that demonstrate variou
    - **Algorithms**:
      - Split-and-Average: Iteratively refines points based on neighboring averages with convergence criteria.
      - Runge-Kutta Methods: Simulates radioactive decay with varying accuracies using RK1, RK2, and RK4 methods.
+       
+### 5. **The Shared Birthday Problem and Random Walk Collisions**
+   - **Purpose**: Simulates the likelihood of shared birthdays and models random walk collisions in a bounded area.
+   - **Algorithms**:
+     - Shared Birthday Problem: Uses probabilistic simulation to estimate the median number of people required for a shared birthday within 7 days.
+     - Random Walk Collisions: Simulates the movement of two entities in a bounded area until they collide using a stochastic random walk approach.
 
-### 5. **The Game of Life and Euler-Bernoulli Beam Bending**
+### 6. **The Game of Life and Euler-Bernoulli Beam Bending**
    - **Purpose**: Simulates Conway's Game of Life and models beam deflection under load.
    - **Algorithms**:
      - Game of Life: Applies cellular automaton rules to simulate population dynamics on a grid.
      - Beam Bending: Uses finite difference methods to calculate deflection in an Euler-Bernoulli beam.
 
-### 6. **DNA Analysis and Pendulum Physics**
-   - **Purpose**: Analyzes DNA sequences to identify coding regions and simulates pendulum motion using numerical integration.
+### 7. **Robotic Navigation and Mapping Simulation**
+   - **Purpose**: This project develops a simulation to optimize the navigation of a robot within a mapped area containing obstacles and an exit point. Using stochastic methods, the simulation identifies the best initial    angle for the robot to reach the exit efficiently.
+   - **Key Features**:
+     - Simulates robotic movement with constant speed and deflections upon collisions.
+     - Implements a stochastic approach to optimize the initial angle between 0° and 90°.
+     - Compares results across three distinct map configurations to analyze performance.
    - **Algorithms**:
-     - DNA Analysis: Detects start and stop codons to compute lengths of protein-coding regions.
-     - Pendulum Simulation: Implements Explicit Euler and Semi-Implicit Euler methods for pendulum dynamics.
-
-### 7. **Newton's Method for Root Finding**
-   - **Purpose**: This project applies Newton's Method to solve a cubic equation and locate its roots with high precision.
-   - **Algorithms**:
-     - Newton's Method: Iteratively refines root approximations using derivatives and a stopping condition based on function values.
-     - Central Difference Approximation: Approximates the derivative of the function for use in Newton's iteration.
+     - Collision Detection: Evaluates if the robot intersects with boundaries or obstacles.
+     - Map Visualization: Dynamically visualizes the map, obstacles, robot, and exit during simulation.
+     - Trial Optimization: Uses randomized angles to identify the best trajectory based on time-to-exit.
+   - **Findings**:
+     - Trial #1 achieves the shortest exit time of ~25.4 seconds with a best angle of ~6.89°.
+     - Trial #2 takes longer due to increased map size, with an optimized time of ~41.4 seconds.
+     - Trial #3, with the exit placed centrally, highlights the impact of map design, resulting in a significantly longer time of ~122.7 seconds.
+     - The simulation demonstrates how small changes in map configuration or initial conditions lead to substantial variations in navigation efficiency, illustrating the complexities of predictive analysis in robotic systems.
 
 ## How to Run
 
